@@ -1,19 +1,16 @@
 import numpy as N
 import reflectingGrid from reflectingLat.py
 
-def applyDiffusionExtended(latExt):
-  reflectingLat(latExt)
-  deffusion(diffustionRate, site)
+def applyDiffusionExtended(latExt, diffusionRate):
+  m_plus_2, n_plus_2 = latExt.shape
+  m, n = m_plus_2 -2, n_plus_2 -2
 
-for i in range (len(latExt)):
-  if(i == 0):
-   #cells are in rows 1 through m and cols 1 though n
+reflectingGrid(latExt)
+newLat = latExt.copy()
+
+for i in range(1, m + 1):
+  for j in range(1, n + 1):
     
-  else if (i == 1):
-    #internal cells are in 2 throught m + 1 and col 2 though n + 1
-
-
-for j in range(len(latExt)):
   #each
 '''
   * take in extened lattice
