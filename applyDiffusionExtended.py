@@ -1,8 +1,8 @@
 import numpy as N
+import reflectingGrid from reflectingLat.py
 
 def applyDiffusionExtended(latExt):
-  m = latExt.N.array([]) + 2
-  n = latExt.  + 2
+  reflectingLat(latExt)
   deffusion(diffustionRate, site)
 
 for i in range (len(latExt)):
