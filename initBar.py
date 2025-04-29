@@ -11,7 +11,7 @@ def initBar(m, n, hotSites, coldSites):
     return applyHotCold(ambientBar, hotSites, coldSites)
 
 def applyHotCold(bar, hotSites, coldSites):
-    newBar = bar.copy()
+    newBar = bar
     for i in range(hotSites.shape[0]):
         for j in range(hotSites.shape[1]):
             if hotSites[i, j] == 1:  # Assign HOT only if the value is 1
