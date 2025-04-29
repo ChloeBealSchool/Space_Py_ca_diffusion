@@ -1,4 +1,4 @@
-import numpy as N
+import numpy as np
 import reflectingGrid from reflectingLat.py
 
 def applyDiffusionExtended(latExt, diffusionRate):
